@@ -1,0 +1,13 @@
+.button {
+    background-color: var(--backcolor);
+    padding: 12px 17px 12px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--textcolor);
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+.button:hover{
+    background-color: var(--backcolor-selected);
+}

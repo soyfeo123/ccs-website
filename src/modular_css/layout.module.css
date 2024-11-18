@@ -1,0 +1,41 @@
+.topbar{
+    background-color: var(--back-backcolor-transparent);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+.topbar * {
+    line-height: 0;
+}
+.flexcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.pagecontainer{
+    flex: 1 1 0;
+    overflow: hidden auto;
+}
+.baritem {
+    padding: 30px;
+    float: left;
+    color: var(--textcolor);
+    text-decoration: none;
+    transition: padding 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    display: flex; /* Flex layout for bar items */
+    align-items: center; /* Center align text and image */
+    height: 6px;
+}
+.baritem:hover{
+    padding: 30px 50px 30px 50px;
+    background-color: var(--textcolor);
+    color: var(--back-backcolor);
+}
+.baritem_bold{
+    font-weight: bold;
+}

@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--back-backcolor);
+  color: var(--textcolor);
+  min-height: 100vh;
+  width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --back-backcolor: rgb(22, 27, 36);
+  --back-backcolor-transparent: rgba(22, 27, 36, 0.5);
+  --forecolor: rgb(255, 64, 76);
+  --textcolor: rgb(255, 240, 241);
+  --backcolor: rgb(46, 57, 77);
+  --backcolor-selected: rgb(100, 113, 136);
+  min-height: 100%;
+  width: 100%;
+}
+
+#root {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
 }

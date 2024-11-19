@@ -11,3 +11,10 @@
 .button:hover{
     background-color: var(--backcolor-selected);
 }
+
+.foreground {
+    background-color: var(--forecolor);
+}
+.foreground:hover {
+    background-color: var(--forecolor-selected) !important;
+}

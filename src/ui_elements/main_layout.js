@@ -22,7 +22,7 @@ function Layout(props){
             <div className={styles.pagecontainer}>
                 <Outlet />
                 {props.children}
-                <Divider></Divider>
+                
             </div>
         </div>
     );

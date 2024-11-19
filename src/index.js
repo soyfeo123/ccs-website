@@ -6,6 +6,8 @@ import ErrorPage from './pages/error_page.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home.js';
+import DownloadPage from './pages/download_ccs.js';
+import { Divider } from './ui_elements/common.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 window.onerror = () => {
@@ -50,7 +52,8 @@ function PageView(){
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index path="/" element={<Home/>}></Route>
+          <Route index path="/" element={<><Home/><Divider/></>}></Route>
+          <Route path="/download-ccs" element={<DownloadPage/>}></Route>
         </Route>
         <Route path="*" element={<Layout><ErrorPage /></Layout>}></Route>
       </Routes>

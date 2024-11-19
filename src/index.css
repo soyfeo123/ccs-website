@@ -15,6 +15,7 @@ body {
   --back-backcolor: rgb(22, 27, 36);
   --back-backcolor-transparent: rgba(22, 27, 36, 0.5);
   --forecolor: rgb(255, 64, 76);
+  --forecolor-selected: rgb(255, 135, 143);
   --textcolor: rgb(255, 240, 241);
   --backcolor: rgb(46, 57, 77);
   --backcolor-selected: rgb(100, 113, 136);

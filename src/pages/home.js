@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import style from "./../modular_css/home.module.css";
 import globalStyle from "./../modular_css/global.module.css";
 import ccsIcon from "./../img/ccsicon.png"
-import { CommonButton, Divider } from "../ui_elements/common";
+import { CommonButton, CommonButtonMain, Divider } from "../ui_elements/common";
 
 const TypingEffect = ({ texts, typingSpeed = 25, pauseDuration = 5000 }) => {
     const [currentText, setCurrentText] = useState("");
@@ -52,7 +52,8 @@ function Home(props){
                       "a new way to tell stories.",
                       "the bridge from movie to Roblox.",
                       "the new way to make Roblox movies."]}></TypingEffect></h1>
-                      <CommonButton link="/download-ccs">Download Now</CommonButton>
+                      <p>The ultimate toolkit for creating professional Roblox movies—fast, easy, and no coding required.</p>
+                      <CommonButtonMain link="/download-ccs"><i class="fa-solid fa-download"></i> Download Now</CommonButtonMain>
                 </div>
             </div>
             <div className={style.create_stunning}>
@@ -95,16 +96,18 @@ function Home(props){
               <p>A: If what you mean by "Non-Roblox Movies" is movies without the Roblox-style to be published on Roblox, yes, you can. However, if you're going to make non-Roblox movies to be published outside of Roblox, I recommend other software, like DaVinci Resolve, since this toolkit is specially designed for Roblox.</p>
               <h3>Q: Who is CCS designed for?</h3>
               <p>Any passionate creator who wants to make Roblox movies and see them on the Big Screen {"(on Roblox. Would be awesome if it were a real Big Screen though.)"}.</p>
+              <h3>Q: What are the system requirements for CCS?</h3>
+              <p>You can check them out on the Download page.</p>
             </div>
             <Divider/>
             <div className={style.ctaSection}>
               <h1>Ready to Make Some Roblox Movies?</h1>
               <p>Get started now and make Roblox movies like a pro--<b>no strings attached.</b></p>
-              <CommonButton link="/download-ccs">Download CCS</CommonButton>
+              <CommonButtonMain link="/download-ccs"><i class="fa-solid fa-download"></i> Download CCS</CommonButtonMain>
               <Divider/>
               <h2>Need Help?</h2>
               <p>Join our community!</p>
-              <CommonButton link="https://discord.gg/jahGejNVBs">Discord Community</CommonButton>
+              <CommonButton link="https://discord.gg/jahGejNVBs"><i class="fa-brands fa-discord"></i> Discord Community</CommonButton>
             </div>
         </div>
     )
